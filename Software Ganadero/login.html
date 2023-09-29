@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Software Ganadero</title>
+    <link rel="shortcut icon" href="images/izotipoGanaderia.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container" id="container">
+  
+      <div class="form-container register-container">
+        <form action="#">
+          <h1>Registrarse</h1>
+          <input type="text" placeholder="Nombre">
+          <input type="email" placeholder="Email">
+          <input type="password" placeholder="Contraseña">
+          <input type="date" id="fecha">
+          <button>Registrarse</button>
+          <span>O usa tu cuenta de:</span>
+          <div class="social-container">
+            <a href="#" class="social"><i class="lni lni-google"></i></a>
+          </div>
+          <!--<a href="#" class="social"><i class="lni lni-twitter-original"></i></a>
+          <a href="#" class="social"><i class="lni lni-facebook-fill"></i></a>
+          <a href="#" class="social"><i class="lni lni-linkedin-original"></i></a>-->
+        </form>
+      </div>
+  
+      <div class="form-container login-container">
+        <form action="#" name="form">
+          <h1>Inicio De Sesión</h1>
+          <input type="email" name="email" placeholder="Email">
+          <input type="password" name="contraseña" placeholder="Contraseña">
+          <div class="content">
+            <div class="checkbox">
+              <input type="checkbox" name="checkbox" id="checkbox">
+              <label>Recuerdame</label>
+            </div>
+            <div class="pass-link">
+              <a href="#">¿Haz olvidado tu contraseña?</a>
+            </div>
+          </div>
+          <button onclick="iniciar()">Entrar</button>
+          
+          <span>O usa tu cuenta de:</span>
+          <div class="social-container">
+            <a href="#" class="social"><i class="lni lni-google"></i></a>
+          </div>
+          <!--<a href="#" class="social"><i class="lni lni-twitter-original" ></i></a>
+          <a href="#" class="social"><i class="lni lni-facebook-fill"></i></a>
+          <a href="#" class="social"><i class="lni lni-linkedin-original"></i></a>-->
+        </form>
+      </div>
+  
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1 class="title">No se que <br> poner aquí</h1>
+            <p>Si tienes una cuenta, inicia sesion aquí.</p>
+            <button class="ghost" id="login">Acceso
+              <i class="lni lni-arrow-left login"></i>
+            </button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1 class="title">Empieza ahora</h1>
+            <p>Si aún no tiene una cuenta, únase a nosotros.</p>
+            <button class="ghost" id="register">Registro
+              <i class="lni lni-arrow-right register"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  
+    <script src="js/login.js"></script>
+  
+  </body>
+</html>

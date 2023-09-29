@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Dosis:500,600,700');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+}
+
+.container {
+    position: fixed;
+    right: 25%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  /*******************************************************************************************/
+  /*FORMULARIO*/
+  form {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .btn-primary {
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+  }
+  
+  .error {
+    color: red;
+    font-size: 16px;
+  }
+  
+  /******************************************************************************************/
+
+.nav {
+    width: 280px;
+}
+.nav_link {
+    color: rgb(0, 0, 0);
+    display: block;
+    padding: 15px 0;
+    text-decoration: none;
+}
+.nav_link--inside {
+    border-radius: 6px;
+    padding-left: 20px;
+    text-align: left;
+}
+.nav_link--inside:hover{
+    background: #9df7b1;
+}
+
+.logo{
+    display: flex;
+    /*margin-top: 20px;*/
+    margin-left: 40px;
+    width: 100%;
+    height: 120px;
+    /*background: #000000;*/
+    align-items: center;
+    justify-content: left;
+    position: relative;
+}
+
+.list {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0 16px 16px 0;
+    background: #55f177;
+}
+
+.list_item {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+.list_item--click {
+    cursor: pointer;
+}
+
+.list_button {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.arrow .list_arrow {
+    transform: rotate(90deg);
+}
+
+.list_arrow{
+    margin-left: auto;
+    transition: transform .3s;
+}
+
+.list_show {
+    width: 80%;
+    margin-left: auto;
+    border-left: 2px solid #000000;
+    list-style: none;
+    transition: height .4s;
+    height: 0;
+}
